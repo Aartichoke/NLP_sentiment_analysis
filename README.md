@@ -33,6 +33,7 @@ the classifier
 ## Example
 
 This review:
+
 {"reviewerID": "A11N155CW1UV02", "asin": "B000H00VBQ",
 "reviewerName":
 "AdrianaM", "helpful": [0, 0], "reviewText": “THE
@@ -42,6 +43,7 @@ TEXT HERE!!!", "overall": 2.0,
 "reviewTime": "05 3, 2014"}
 
 Becomes: 
+
 Negative_dict = { “Text” : 1, “Here” : 1}
 
 
