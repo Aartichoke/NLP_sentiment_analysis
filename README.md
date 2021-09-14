@@ -14,7 +14,7 @@ rating types
 - Use classifier to find reviews with ratings that don’t
 match their sentiment
 
-Approach
+## Approach
 - Obtain a repository of Amazon reviews and metadata
 - Import data in json format
 - Extract text from positive and negative reviews
@@ -30,7 +30,7 @@ count words (“fish” and “fishes” becomes {“fish” :2})
 - Repeat for each review, 90% of which used to train
 the classifier
 
-# Example
+## Example
 
 This review…
 {"reviewerID": "A11N155CW1UV02", "asin": "B000H00VBQ",
@@ -45,7 +45,7 @@ Becomes…
 Negative_dict = { “Text” : 1, “Here” : 1}
 
 
-Approach (continued)
+## Approach (continued)
 
 - Train the classifier over five runs (aka folds) of the
 training data (divided into equal portions) using
@@ -59,10 +59,9 @@ of each word)
 - After final fold, classifier precision (accuracy of
 positive predictions) and recall (fraction of positives
 that were correctly identified) are determined
-
 - Samples that are do not match model are more likely to be fake
 
-# Results
+## Results
 Using 37126 reviews: 90% training, 10% test
 86% precision
 Feature size: 50821
